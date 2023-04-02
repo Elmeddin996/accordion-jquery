@@ -1,0 +1,70 @@
+.accordion {
+  margin: 50px;
+}
+
+.accordion dt, .accordion dd {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+.accordion dt:last-of-type, .accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+
+.accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+.accordion2 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.active, .accordion2:hover {
+  background-color: #ccc;
+}
+
+.accordion2:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s ease-out;
+  transition: max-height 0.8s ease-out;
+}
+/*# sourceMappingURL=style.css.map */
